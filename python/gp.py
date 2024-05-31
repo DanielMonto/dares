@@ -8,7 +8,7 @@ def generate_password(length,with_mayus,with_numbers,with_simbols):
     simbols=['!', '"', '#', '$', '%', '&', "'", '(', ')', 
             '*', '+', ',', '-', '.', '/', ':', ';', '<', 
             '=', '>', '?', '@', '[', '\.', ']', '^', '_', 
-            '`', '{', '|', '}', '~', '¬', '°', '¡', '¿',' ']
+            '`', '{', '|', '}', '~',  '¡', '¿',' ']
     password=''
     lists=[]
     if with_mayus=='yes' and with_numbers=='yes' and with_simbols=='yes':
@@ -44,8 +44,6 @@ def main():
             length=int(length)
             if length<8:
                 print('pick 8 or more for the password´s length')
-            elif length>16:
-                print('pick 16 or less for the password´s length')
             else:
                 with_mayus=input('chose if the password has o not mayus chars: [yes or no] ')
                 with_numbers=input('chose if the password has or not numbers: [yes or no] ')
